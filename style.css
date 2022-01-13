@@ -1,0 +1,347 @@
+
+#container {
+ /*set width and height*/
+  width: 90vw;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vh;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  text-align: center;
+  position: relative;
+
+  background-color: #efebe7;
+}
+
+h1 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   text-align: center;
+   font-size: 6rem;
+   line-height: 1.4;
+
+ }
+ h2{
+   font-size: 2.2rem;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   text-align: center;
+ }
+
+ a{
+   color: white;
+   text-decoration: none;
+ }
+
+#navbar {
+
+  box-sizing: border-box;
+  /* User Story #11 - ensure the nav bar is at the top of the page all the time */
+  /*position: fixed;*/
+
+  /*Some positioning*/
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: auto%;
+
+  /*Formatting*/
+  background-image: linear-gradient(162deg, #ffffff 0%, #001CCC 100%);
+
+  /*Grid settings for the nav links which are class nav-link*/
+  display: grid;
+
+  /*define template - just 1 row - but 3 columns*/
+  grid-template-columns: [header] auto [project-link] min-content [profile-link] min-content;
+  grid-template-rows: [nav] auto;
+  grid-gap: 0px 0px;
+}
+
+#project-link{
+  /*position in container div*/
+  grid-column: project-link / project-link;
+  grid-row: nav / nav;
+  align-self: stretch;
+
+
+
+}
+
+#profile-nav-link{
+  /*position in container div*/
+  grid-column: profile-link / profile-link;
+  grid-row: nav / nav;
+  align-self: stretch;
+
+
+}
+
+
+.nav-link {
+  /*font formatting*/
+  font-family: 'poppins', sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  /*remove the underline from the links*/
+  text-decoration: none;
+  margin: 0.1em ;
+}
+
+/*hover color*/
+.nav-link a:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+#welcome-section {
+
+  width: 100%;
+  height: auto;
+
+  padding: 2rem;
+  margin: 2rem;
+
+  /*page formatting*/
+  background-color: #efd3c3;
+  background-image: linear-gradient(62deg, #b59f97 0%, #181719 100%);
+
+  border-radius: 20px;
+  /*format text*/
+  text-align: left;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#welcome-section h1{
+  padding: 1em;
+  margin: 1em;
+}
+
+#welcome-section p{
+  font-size: calc(1rem + 1vw);
+  font-weight: 200;
+  font-style: italic;
+
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#projects {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+
+  text-align: center;
+
+  height: auto;
+  width: 100%;
+
+  /*page formatting*/
+  background-color: #45567d;
+  background-image: linear-gradient(162deg, #45567d 0%, #20293b 100%);
+
+  border-radius: 20px;
+
+  padding: 1em;
+  margin: 1em;
+
+}
+
+
+
+#projects-grid{
+ width: 100%;
+ height: auto;
+
+ display: flex;
+ flex-direction: row;
+ align-content: center;
+ justify-content: space-between;
+
+ padding: 1em;
+ margin: 1em;
+
+}
+
+.project-tile{
+  width: auto;
+  height: 22em;
+
+  margin: 1em;
+  padding: 13em;
+
+  background-color: #303841;
+  box-shadow: 3px;
+  border-radius: 10px;
+
+  align-self: flex-start;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  text-decoration: none;
+
+}
+
+.project-tile:hover{
+  border: solid white 2px;
+  border-radius: 30px;
+  text-decoration: underline;
+}
+
+.project-tile p{
+  font-size: 1rem;
+
+}
+
+
+.project-image{
+  height: auto;
+  width: auto;
+
+  padding: 0.5rem;
+  margin: 0.5em;
+
+  align-self: center;
+
+  border: white 0.1rem solid;
+  border-radius: 10px;
+}
+
+.project-title{
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  height: auto;
+  width: auto;
+}
+
+#more-projects-link{
+  padding: 0.2em;
+  margin: 0.2em;
+  text-decoration: none;
+
+  font-size: 2rem;
+  color: white;
+
+
+}
+
+#more-projects-link:hover{
+  text-decoration: underline;
+}
+
+#profile-section{
+
+  box-sizing: border-box;
+
+
+  height: auto;
+  width: 100%;
+  padding: 1em;
+  margin: 1em;
+
+
+  /*page formatting*/
+  background-color: #efd3c3;
+  background-image: linear-gradient(62deg, #b59f97 0%, #181719 100%);
+
+  border-radius: 20px;
+
+  /*define a flexbox to hod the icons*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#profile-banner{
+  text-align: center;
+
+}
+
+#profile-banner p{
+  font-style: italic;
+}
+
+#profile-banner h2{
+  font-size: 4.2rem;
+}
+
+#icons-grid{
+  /*define a flexbox to hod the icons*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.icon-link{
+  color: white;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px black;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+  text-decoration: none;
+  align-self: center;
+
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.icon-link:hover{
+  text-decoration: underline;
+}
+
+#profile-link{
+
+}
+
+#github-link{
+
+}
+
+#drupal-link{
+
+}
+
+#twitter-link{
+
+}
