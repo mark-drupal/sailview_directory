@@ -184,7 +184,7 @@ h1 {
  display: flex;
  flex-direction: row;
  align-content: center;
- justify-content: space-between;
+ justify-content: center;
 
  padding: 1em;
  margin: 1em;
@@ -194,6 +194,7 @@ h1 {
 .project-tile{
   width: auto;
   height: 22em;
+  color: white;
 
   margin: 1em;
   padding: 13em;
